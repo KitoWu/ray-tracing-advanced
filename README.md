@@ -16,7 +16,7 @@
 
 > 使用 1200x675 分辨率，1 样本/像素渲染结果。
 
-<img src="./examples/oneSampleOutput.jpg" alt="1 SPP 渲染示例" width="600">
+<img src="examples/oneSampleOutput.jpg" alt="1 SPP 渲染示例" width="600">
 
 > 使用 1200x675 分辨率，500 样本/像素渲染结果。
 
