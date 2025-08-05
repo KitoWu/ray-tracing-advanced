@@ -24,7 +24,7 @@
 
 > 使用 1200x675 分辨率，100 SPP 渲染结果。
 
-<img src="examples/onehundredSampleOutput.jpg" alt="100 SPP 渲染示例" width="600">
+<img src="examples/OnehundredSampleOutput.jpg" alt="100 SPP 渲染示例" width="600">
 
 
 ## 🛠 编译与运行
