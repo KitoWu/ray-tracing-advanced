@@ -27,7 +27,7 @@
 - C++11 或更高版本编译器
 - 支持 `make` 或 `g++`
 
-### 编译方式
+### make编译
 
 ```bash
 mkdir build
@@ -40,6 +40,16 @@ make
 
 ```bash
 ./bin/rayTracer > output.ppm
+```
+### g++编译
+
+```bash
+g++ -g main.cpp -o main.exe
+```
+### 运行
+
+```bash
+.\main.exe > output.ppm
 ```
 
 你可以使用 ImageMagick 或 Photoshop 等工具查看 `.ppm` 图片。
