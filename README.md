@@ -22,6 +22,11 @@
 
 <img src="examples/tenSampleOutput.jpg" alt="10 SPP 渲染示例" width="600">
 
+> 使用 1200x675 分辨率，100 SPP 渲染结果。
+
+<img src="examples/onehundredSampleOutput.jpg" alt="100 SPP 渲染示例" width="600">
+
+
 ## 🛠 编译与运行
 
 ### 依赖
