@@ -1,3 +1,0 @@
-/Users/macwu/Documents/Wuqitong/TJU/CG/RayTracing/build/CMakeFiles/inOneWeekend.dir
-/Users/macwu/Documents/Wuqitong/TJU/CG/RayTracing/build/CMakeFiles/edit_cache.dir
-/Users/macwu/Documents/Wuqitong/TJU/CG/RayTracing/build/CMakeFiles/rebuild_cache.dir
