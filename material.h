@@ -2,6 +2,7 @@
 #define MATERIAL_H
 
 #include "hittable.h"
+#include "texture.h"
 class material{
 public:
     virtual ~material() = default;
@@ -12,19 +13,20 @@ public:
 
 class lambertian : public material{
 public:
-    lambertian(const color& albedo) : albedo(albedo) {}
+    lambertian(const color& albedo) : tex(make_shared<solid_color>(albedo)) {}
+    lambertian(shared_ptr<texture> tex) : tex(tex) {}
     bool scatter(const ray& r, const hit_record& rec, color& attenuation, ray& scattered) const override{
         auto scatter_direction = rec.normal + random_unit_vector();
-        scattered = ray(rec.p, scatter_direction);
+        scattered = ray(rec.p, scatter_direction, r.time());
         if(scatter_direction.near_zero()){
             scatter_direction = rec.normal;
         }
-        attenuation = albedo;
+        attenuation = tex->value(rec.u, rec.v, rec.p);
         return true;
     }
 
 private:
-    color albedo;
+    shared_ptr<texture> tex;   
 };
 
 class metal : public material{
@@ -33,7 +35,7 @@ public:
     bool scatter(const ray& r, const hit_record& rec, color& attenuation, ray& scattered) const override{
         auto reflected = reflect(r.direction(), rec.normal);
         reflected = unit_vector(reflected) + (fuzz * random_unit_vector()); 
-        scattered = ray(rec.p, reflected);
+        scattered = ray(rec.p, reflected, r.time());
         attenuation = albedo;
         return true;
     }
@@ -61,7 +63,7 @@ public:
         else{
             direction = refract(unit_direction, rec.normal, ri);
         }
-        scattered = ray(rec.p, direction);
+        scattered = ray(rec.p, direction, r.time());
         return true;
     }
 private:

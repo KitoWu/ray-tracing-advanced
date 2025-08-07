@@ -85,7 +85,8 @@ private:
                          + ((j + offset.y()) * pixel_delta_v);
         auto ray_origin = (defocus_angle <= 0) ? center : defocus_disk_sample();
         auto ray_direction = pixel_sample - ray_origin;
-        return ray(ray_origin, ray_direction);
+        auto ray_time = random_double();
+        return ray(ray_origin, ray_direction, ray_time);
     }
     vec3 sample_square() const{
         return vec3(random_double() - 0.5, random_double() - 0.5, 0);
@@ -110,7 +111,6 @@ private:
         auto a = 0.5 * (unit_direction.y() + 1.0);
         return (1.0 - a) * color(1.0, 1.0, 1.0) + a * color(0.5, 0.7, 1.0);
     }
-
     
 };
 #endif
