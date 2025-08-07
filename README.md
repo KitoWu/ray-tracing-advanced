@@ -5,14 +5,14 @@
 
 ## 🌟 功能特性（✅已实现，❌未实现）
 ✨ 新特性
-✅ 运动模糊（Motion Blur）：真实模拟移动物体的模糊效果
-✅ BVH 包围体层次结构（Bounding Volume Hierarchies）：加速复杂场景下的光线-物体相交计算，速度性能可实现数量级的提升
-❌ 纹理贴图（Texture Mapping）：支持将图像贴图映射到球体或其他物体上
-❌ Perlin 噪声（Perlin Noise）：用于生成自然的纹理，如大理石、云朵等
-❌ 光源（Lights）：增加光源模型以支持更真实的光照
-❌ 变换（Transforms）：支持物体的平移、缩放、旋转
-❌ 体积渲染（Volumetric Rendering）：模拟烟雾、雾气等气体体积
-❌ 四边形（Quadrilaterals）：除球体外引入更多基本图元，为后续扩展（如三角形、圆盘）打下基础
+- ✅ 运动模糊（Motion Blur）：真实模拟移动物体的模糊效果
+- ✅ BVH 包围体层次结构（Bounding Volume Hierarchies）：加速复杂场景下的光线-物体相交计算，速度性能可实现数量级的提升
+- ❌ 纹理贴图（Texture Mapping）：支持将图像贴图映射到球体或其他物体上
+- ❌ Perlin 噪声（Perlin Noise）：用于生成自然的纹理，如大理石、云朵等
+- ❌ 光源（Lights）：增加光源模型以支持更真实的光照
+- ❌ 变换（Transforms）：支持物体的平移、缩放、旋转
+- ❌ 体积渲染（Volumetric Rendering）：模拟烟雾、雾气等气体体积
+- ❌ 四边形（Quadrilaterals）：除球体外引入更多基本图元，为后续扩展（如三角形、圆盘）打下基础
 
 ## 🖼️ 效果展示
 
