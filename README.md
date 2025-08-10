@@ -16,6 +16,7 @@
 
 ## 🖼️ 效果展示
 
+<img src="images/img-final.jpg">
 
 ## 🛠 编译与运行
 
