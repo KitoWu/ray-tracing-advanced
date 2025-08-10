@@ -3,18 +3,19 @@
 
 这是一个使用 C++ 编写的进阶光线追踪渲染器，支持运动模糊、BVH 加速结构、纹理贴图、Perlin 噪声、体积渲染等更高级的功能。
 
-## 🌟 功能特性（✅已实现，❌未实现）
+## 🌟 功能特性
 ✨ 新特性
 - ✅ 运动模糊（Motion Blur）：真实模拟移动物体的模糊效果
 - ✅ BVH 包围体层次结构（Bounding Volume Hierarchies）：加速复杂场景下的光线-物体相交计算，速度性能可实现数量级的提升
-- ❌ 纹理贴图（Texture Mapping）：支持将图像贴图映射到球体或其他物体上
-- ❌ Perlin 噪声（Perlin Noise）：用于生成自然的纹理，如大理石、云朵等
-- ❌ 光源（Lights）：增加光源模型以支持更真实的光照
-- ❌ 变换（Transforms）：支持物体的平移、缩放、旋转
-- ❌ 体积渲染（Volumetric Rendering）：模拟烟雾、雾气等气体体积
-- ❌ 四边形（Quadrilaterals）：除球体外引入更多基本图元，为后续扩展（如三角形、圆盘）打下基础
+- ✅ 纹理贴图（Texture Mapping）：支持将图像贴图映射到球体或其他物体上
+- ✅ Perlin 噪声（Perlin Noise）：用于生成自然的纹理，如大理石、云朵等
+- ✅ 光源（Lights）：增加光源模型以支持更真实的光照
+- ✅ 变换（Transforms）：支持物体的平移、缩放、旋转
+- ✅ 体积渲染（Volumetric Rendering）：模拟烟雾、雾气等气体体积
+- ✅ 四边形（Quadrilaterals）：除球体外引入更多基本图元，为后续扩展（如三角形、圆盘）打下基础
 
 ## 🖼️ 效果展示
+
 
 ## 🛠 编译与运行
 
@@ -70,6 +71,9 @@ ray-tracing/
 ├── vec3.h             # 工具函数
 ├── texture.h          # 纹理类，支持图像、噪声纹理
 ├── rtweekend.h        # 工具函数
+├── constant_medium.h  # 体积渲染
+├── quad.h             # 四边形实现
+├── perlin.h           # 噪声实现
 ├── examples           # 输出文件夹
 |    ── output.ppm     # 渲染输出图像（运行后生成）
 └── README.md          # 项目说明文件
